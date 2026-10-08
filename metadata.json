@@ -1,0 +1,6 @@
+{
+  "name": "Chrono Eclipse: Remnants of the Void",
+  "description": "Atmospheric 2D anime horror platformer where a lone wanderer confronts a towering abyssal sovereign using the forbidden power of Time Stop.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

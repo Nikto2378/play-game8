@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Cinzel', serif;
+}
+
+.font-mono-nums {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom visual filters */
+@keyframes time-distortion-pulse {
+  0%, 100% {
+    filter: invert(0.85) contrast(1.4) hue-rotate(180deg) saturate(0.2);
+  }
+  50% {
+    filter: invert(0.95) contrast(1.6) hue-rotate(190deg) saturate(0.1);
+  }
+}
+
+.time-stop-active {
+  animation: time-distortion-pulse 3s infinite ease-in-out;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 10, 18, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(80, 50, 110, 0.6);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(140, 80, 200, 0.8);
+}
